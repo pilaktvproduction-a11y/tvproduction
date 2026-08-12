@@ -1,0 +1,436 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<title>VIDEO DEMO</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="Scripts/AC_RunActiveContent.js" type="text/javascript"></script>
+
+<script src="Scripts/swfobject_modified.js" type="text/javascript"></script>
+<script src="SpryAssets/SpryMenuBar.js" type="text/javascript"></script>
+<script type="text/javascript">
+<!--
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_nbGroup(event, grpName) { //v6.0
+  var i,img,nbArr,args=MM_nbGroup.arguments;
+  if (event == "init" && args.length > 2) {
+    if ((img = MM_findObj(args[2])) != null && !img.MM_init) {
+      img.MM_init = true; img.MM_up = args[3]; img.MM_dn = img.src;
+      if ((nbArr = document[grpName]) == null) nbArr = document[grpName] = new Array();
+      nbArr[nbArr.length] = img;
+      for (i=4; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+        if (!img.MM_up) img.MM_up = img.src;
+        img.src = img.MM_dn = args[i+1];
+        nbArr[nbArr.length] = img;
+    } }
+  } else if (event == "over") {
+    document.MM_nbOver = nbArr = new Array();
+    for (i=1; i < args.length-1; i+=3) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = (img.MM_dn && args[i+2]) ? args[i+2] : ((args[i+1])? args[i+1] : img.MM_up);
+      nbArr[nbArr.length] = img;
+    }
+  } else if (event == "out" ) {
+    for (i=0; i < document.MM_nbOver.length; i++) {
+      img = document.MM_nbOver[i]; img.src = (img.MM_dn) ? img.MM_dn : img.MM_up; }
+  } else if (event == "down") {
+    nbArr = document[grpName];
+    if (nbArr)
+      for (i=0; i < nbArr.length; i++) { img=nbArr[i]; img.src = img.MM_up; img.MM_dn = 0; }
+    document[grpName] = nbArr = new Array();
+    for (i=2; i < args.length-1; i+=2) if ((img = MM_findObj(args[i])) != null) {
+      if (!img.MM_up) img.MM_up = img.src;
+      img.src = img.MM_dn = (args[i+1])? args[i+1] : img.MM_up;
+      nbArr[nbArr.length] = img;
+  } }
+}
+//-->
+    </script>
+<style type="text/css">
+<!--
+a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	color: #FFCC00;
+}
+a:visited {
+	color: #000;
+}
+body, td, th {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFF;
+}
+body {
+	background-color: #000000;
+}
+a:active {
+	color: #FFFFFF;
+}
+a:hover {
+	color: #FFFFFF;
+}
+-->
+</style>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1253">
+<style type="text/css">
+<!--
+.style10 {
+	font-size: 12px
+}
+.style11 {
+	font-family: Tahoma, Verdana, Arial
+}
+.style18 {
+	font-size: 14px
+}
+.style5 {
+	color: #FF0000
+}
+.style19 {
+	font-size: 9px;
+	font-family: Tahoma, Verdana, Arial;
+}
+.style20 {
+	font-family: MgAntiqueExtra;
+	font-size: 14px;
+}
+.style7 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-size: 9px;
+}
+.style23 {
+	color: #FFFFFF;
+	font-size: 9px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style25 {
+	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 9px;
+}
+.style30 {
+	font-size: 12
+}
+.style31 {
+	margin-top : 5px;
+	padding-bottom : 5px;
+	margin-bottom : 0px;
+	margin-left : 15px;
+	margin-right : 11px;
+	font-family : Tahoma, Verdana, Arial;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+.style32 {
+	margin-top : 10px;
+	padding-bottom : 5px;
+	margin-bottom : 0px;
+	margin-left : 20px;
+	margin-right : 20px;
+	font-family : Tahoma, Verdana, Arial;
+	font-weight: bold;
+	color: #000000;
+}
+.style34 {
+	margin-top : 5px;
+	padding-bottom : 5px;
+	margin-bottom : 0px;
+	margin-left : 12px;
+	margin-right : 12px;
+	font-family : Tahoma, Verdana, Arial;
+	text-align: right;
+	font-weight: bold;
+	color: #000000;
+}
+.style35 {
+	margin-top : 10px;
+	padding-bottom : 5px;
+	margin-bottom : 0px;
+	margin-left : 20px;
+	margin-right : 20px;
+	font-size : 9px;
+	font-family : Tahoma, Verdana, Arial;
+	color: #FFFFFF;
+}
+.style36 {
+	color: #FFFFFF;
+	font-size: 12px;
+}
+.style37 {
+	font-size: 10px
+}
+-->
+</style>
+<style type="text/css">
+<!--
+.style38 {
+	color: #000000;
+	font-size: 14px;
+	font-family: Tahoma, Verdana, Arial;
+}
+.style22 {
+	color: #FFFFFF
+}
+.style26 {
+	color: #FFFFFF;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: lighter;
+	font-size: 9px;
+}
+.style191 {	font-size: 10px;
+	font-family: Tahoma, Verdana, Arial;
+}
+-->
+</style>
+
+
+<link href="SpryAssets/SpryMenuBarHorizontal.css" rel="stylesheet" type="text/css">
+<link href="SpryAssets/SpryMenuBarVertical.css" rel="stylesheet" type="text/css">
+<style type="text/css">
+<!--
+.style251 {	font-family: Arial, Helvetica, sans-serif;
+	color: #FFFFFF;
+	margin-top: 10px;
+	padding-bottom: 5px;
+	margin-bottom: 0px;
+	margin-left: 20px;
+	margin-right: 20px;
+	font-size: 9px;
+}
+.A1 {
+	color: #FFF;
+	font-size: 9px;
+}
+.left {
+	color: #FFF;
+	font-size: 9px;
+}
+.left1 {	color: #FFF;
+}
+.style30 table tr td table tr td .left {
+	color: #CCC;
+}
+.left2 {	color: #FFF;
+	font-size: 9px;
+}
+.style381 {	color: #000000;
+	font-size: 14px;
+	font-family: Tahoma, Verdana, Arial;
+}
+.style51 {color: #FFF
+}
+.style1911 {font-size: 9px;
+	font-family: Tahoma, Verdana, Arial;
+}
+.style3011 {font-size: 12
+}
+.style3011 {font-size: 12
+}
+-->
+</style>
+</head>
+<body bgcolor="#CCCCCC" leftmargin=0 topmargin=0 marginwidth="0" marginheight="0" onLoad="MM_preloadImages('IMAGES/COVER/MALGARA/2008/23-12-2008 MALGARA EXOFYLLO DVD.jpg','IMAGES/COVER/MALGARA/2008/07-06-2008 DVD.jpg','IMAGES/COVER/MALGARA/2008/12012-2008  NHPIAGVGEIO MALGARON EXOFYLLO DVD.jpg','IMAGES/COVER/MALGARA/2007/08-09-2007 1.jpg','IMAGES/COVER/MALGARA/2007/06-09-2007.jpg','IMAGES/COVER/MALGARA/2007/09-09-2007.jpg','IMAGES/COVER/MALGARA/2006/07-09-2006 GIORTH RYZIOY DVD.jpg','IMAGES/COVER/MALGARA/2006/06-09-2006 GIORTH RYZIOY DVD.jpg','IMAGES/COVER/MALGARA/2006/10-09-2006 GIORTH RYZIOY DVD.jpg')">
+<table width="759" border="5" cellspacing="0" cellpadding="0" align="center">
+  <tr>
+    <td><a href="IMAGES/tvproduction.gif"><img src="images/tvpro-gif4.gif" width="255" height="120"></a></td>
+    <td><img src="images/tv production.jpg" width="499" height="126" alt="logo"></td>
+  </tr>
+</table>
+<table border="0" cellpadding="0" cellspacing="0" width="759" align="center" background="images/fon_menu.gif">
+  <tr>
+    <td><img src="images/menu01.gif" width="3" height="42" alt="" border="0"></td>
+    <td><table border="0" cellpadding="0" cellspacing="0">
+        <tr>
+          <td width="71"><p class="menu01"><a href="KENTRIKH.html????.html" class="style19">HOME</a></p></td>
+          <td width="24"><img src="images/e_menu.gif" alt="" width="24" height="42" border="0"></td>
+          <td width="99"><ul id="MenuBar1" class="MenuBarVertical">
+            <li><a href="#">&Epsilon;&Pi;&Iota;&Lambda;&Omicron;&Gamma;&Eta; &Chi;&Rho;&Omicron;&Nu;&Iota;&Alpha;&Sigma;</a>              </li>
+          </ul></td>
+          <td width="24"><img src="images/e_menu.gif" alt="" width="24" height="42" border="0"></td>
+          <td width="118"><p align="center" class="menu01"><a href="KYKLOFORIES.html" class="style19">&Kappa;&Upsilon;&Kappa;&Lambda;&Omicron;&Phi;&Omicron;&Rho;&Iota;&Epsilon;&Sigma;</a></p></td>
+          <td width="24"><img src="images/e_menu.gif" alt="" width="24" height="42" border="0"></td>
+          <td width="110"><p class="menu01"><a href="SYNERGASIES.html" class="style19">&Sigma;&Upsilon;&Nu;&Epsilon;&Rho;&Gamma;&Alpha;&Sigma;&Iota;&Epsilon;&Sigma;</a></p></td>
+          <td width="24"><img src="images/e_menu.gif" alt="" width="24" height="42" border="0"></td>
+          <td width="77"><p class="menu01"><a href="KYKLOFORIES.html" class="style19">&Alpha;&Gamma;&Omicron;&Rho;&Alpha;</a></p></td>
+          <td width="24"><img src="images/e_menu.gif" alt="" width="24" height="42" border="0"></td>
+          <td width="162"><a href="CONTACT.html"><img src="images/but_contacts.gif" width="96" height="41" border="0"></a></td>
+          <td width="162">&nbsp;</td>
+        </tr>
+      </table></td>
+    <td align="right"><img src="images/menu02.gif" width="3" height="42" alt="" border="0"></td>
+  </tr>
+</table>
+<table width="450" border="5" align="center" cellpadding="0" cellspacing="0" bgcolor="#FFFFFF">
+  <tr valign="top">
+    <td width="3" background="images/fon_left.gif"><img src="images/fon_left.gif" width="3" height="13" alt="" border="0"></td>
+    <td width="1376" bgcolor="#FFFFFF"><p class="px5">VIDEO DEMO<table width="30%" border="0" cellpadding="0" cellspacing="0" bgcolor="#000066">
+        <tr valign="top">
+          <td bgcolor="#000000"><table border="0" cellpadding="0" cellspacing="0" bgcolor="#000000">
+            <tr>              </tr>
+          </table></td>
+          <td align="right" bgcolor="#000000"><!-- left -->
+          <!-- /left -->
+          <table width="362" height="423" border="5" cellpadding="0" cellspacing="0" bgcolor="#000000">
+            <tr>
+              <td colspan="3" bgcolor="#777777"><p class="title"><img src="images/e01.gif" width="8" height="8" alt="" border="0">DEMO TV PRODUCTION</p></td>
+            </tr>
+            <tr>
+              <td colspan="3" bgcolor="#CCCCCC"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+              <td width="1" rowspan="2" bgcolor="#CCCCCC"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+              <td width="760" bgcolor="#EF9400"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+              <td width="1" rowspan="2" bgcolor="#CCCCCC"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+            </tr>
+            <tr>
+              <td height="394" bgcolor="#CCCCCC"><object width="400" height="280">
+                <param name="movie" value="http://www.youtube.com/v/7WXpj3iJXaI&hl=en&fs=1">
+                </param>
+                <param name="allowFullScreen" value="true">
+                </param>
+                <param name="allowscriptaccess" value="always">
+                </param>
+                <embed src="http://www.youtube.com/v/7WXpj3iJXaI&hl=en&fs=1" type="application/x-shockwave-flash" allowscriptaccess="always" allowfullscreen="true" width="400" height="280"></embed>
+                </object></td>
+            </tr>
+          </table></td>
+          <td bgcolor="#000000" class="style30"><!-- right -->
+            <table border="5" cellpadding="0" cellspacing="0">
+              <tr>
+                <td colspan="2" bgcolor="#777777"><p class="style31"><img src="images/e01.gif" width="8" height="8" alt="" border="0">&nbsp;&nbsp;&Mu;&Iota;&Kappa;&Rho;&Omicron; &Beta;&Iota;&Omicron;&Gamma;&Rho;&Alpha;&Phi;&Iota;&Kappa;&Omicron; </p></td>
+              </tr>
+              <tr>
+                <td colspan="2" bgcolor="#CCCCCC"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+              </tr>
+              <tr>
+                <td width="1" rowspan="2" bgcolor="#CCCCCC"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+                <td width="583" bgcolor="#EF9400"><img src="images/px1.gif" width="1" height="1" alt="" border="0"></td>
+              </tr>
+              <tr>
+                <td bgcolor="#000000"><p style="color: #000000; ; margin-top : 6px; padding-bottom : 5px; margin-bottom : 0px; margin-left : 20px; margin-right : 20px; font-family : Tahoma,Verdana,Arial; font-weight: lighter;">&nbsp;<span class="b">&nbsp;&Mu;&iota;&kappa;&rho;&#972; &beta;&iota;&omicron;&gamma;&rho;&alpha;&phi;&iota;&kappa;&#972; </span></p>
+                  <p class="b"><strong>&Eta; &epsilon;&tau;&alpha;&iota;&rho;&#943;&alpha; &Tau;&eta;&lambda;&epsilon;&omicron;&pi;&tau;&iota;&kappa;&#974;&nu; &Pi;&alpha;&rho;&alpha;&gamma;&omega;&gamma;&#974;&nu; TV PRODUCTION, &iota;&delta;&rho;&#973;&theta;&eta;&kappa;&epsilon; &tau;&omicron;  1985, &alpha;&pi;&#972; &tau;&omicron;&nu; &sigma;&eta;&mu;&epsilon;&rho;&iota;&nu;&#972; &iota;&delta;&iota;&omicron;&kappa;&tau;&#942;&tau;&eta; &tau;&eta;&sigmaf;, &kappa;. &Kappa;&omega;&nu;&sigma;&tau;&alpha;&nu;&tau;&#943;&nu;&omicron; &Pi;&iota;&lambda;&alpha;&kappa;&omicron;&#973;&delta;&eta; &mu;&epsilon; &#941;&delta;&rho;&alpha;, &tau;&omicron; &Delta;.&Delta;.  &Kappa;&upsilon;&mu;&#943;&nu;&omega;&nu; &tau;&omicron;&upsilon; &Delta;&#942;&mu;&omicron;&upsilon; &Alpha;&xi;&iota;&omicron;&#973; &Theta;&epsilon;&sigma;&sigma;&alpha;&lambda;&omicron;&nu;&#943;&kappa;&eta;&sigmaf;.</strong></p>
+                  <p class="b"><strong>&Eta;&nbsp; &epsilon;&tau;&alpha;&iota;&rho;&#943;&alpha; &lsquo;&rsquo;&sigma;&tau;&#942;&theta;&eta;&kappa;&epsilon;&rsquo;&rsquo; &mu;&epsilon; &pi;&omicron;&lambda;&#973; &mu;&epsilon;&rho;&#940;&kappa;&iota;  &alpha;&pi;&#972; &alpha;&nu;&theta;&rho;&#974;&pi;&omicron;&upsilon;&sigmaf; &pi;&omicron;&upsilon; &epsilon;&rho;&gamma;&#940;&sigma;&tau;&eta;&kappa;&alpha;&nu; &gamma;&iota;&alpha; &pi;&omicron;&lambda;&lambda;&#940; &chi;&rho;&#972;&nu;&iota;&alpha; &sigma;&tau;&omicron;&nu; &chi;&#974;&rho;&omicron; &tau;&eta;&sigmaf; &tau;&eta;&lambda;&epsilon;&#972;&rho;&alpha;&sigma;&eta;&sigmaf;, &tau;&eta;&sigmaf;  &delta;&iota;&alpha;&phi;&#942;&mu;&iota;&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &tau;&omicron;&upsilon; &rho;&alpha;&delta;&iota;&omicron;&phi;&#974;&nu;&omicron;&upsilon;.</strong></p>
+                  <p class="b"><strong>&Tau;&omicron; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;&#972; &tau;&eta;&sigmaf; TV PRODUCTION &delta;&rho;&alpha;&sigma;&tau;&eta;&rho;&iota;&omicron;&pi;&omicron;&iota;&epsilon;&#943;&tau;&alpha;&iota; &sigma;&tau;&omicron;&nu; &chi;&#974;&rho;&omicron; &tau;&omicron;&upsilon; &delta;&eta;&mu;&iota;&omicron;&upsilon;&rho;&gamma;&iota;&kappa;&omicron;&#973; &sigma;&chi;&epsilon;&delta;&iota;&alpha;&sigma;&mu;&omicron;&#973;,  &pi;&alpha;&rho;&#941;&chi;&omicron;&nu;&tau;&alpha;&sigmaf; &omicron;&lambda;&omicron;&kappa;&lambda;&eta;&rho;&omega;&mu;&#941;&nu;&epsilon;&sigmaf; &upsilon;&pi;&eta;&rho;&epsilon;&sigma;&#943;&epsilon;&sigmaf; &delta;&iota;&alpha;&phi;&#942;&mu;&iota;&sigma;&eta;&sigmaf; &kappa;&alpha;&iota; &omicron;&pi;&tau;&iota;&kappa;&#942;&sigmaf; &epsilon;&pi;&iota;&kappa;&omicron;&iota;&nu;&omega;&nu;&#943;&alpha;&sigmaf;.</strong></p>
+                  <p class="b"><strong>&Eta; &epsilon;&gamma;&kappa;&upsilon;&rho;&#972;&tau;&eta;&tau;&alpha;, &eta; &alpha;&mu;&epsilon;&sigma;&#972;&tau;&eta;&tau;&alpha; &kappa;&alpha;&iota; &eta; &alpha;&xi;&iota;&omicron;&pi;&iota;&sigma;&tau;&#943;&alpha;, &sigma;&epsilon; &sigma;&upsilon;&nu;&delta;&upsilon;&alpha;&sigma;&mu;&#972; &mu;&epsilon; &tau;&eta;&nu; &pi;&lambda;&#942;&rho;&eta;  &psi;&eta;&phi;&iota;&alpha;&kappa;&#942; &tau;&epsilon;&chi;&nu;&omicron;&lambda;&omicron;&gamma;&#943;&alpha;, &sigma;&upsilon;&nu;&theta;&#941;&tau;&omicron;&upsilon;&nu; &tau;&omicron; &pi;&#940;&zeta;&lambda; &tau;&eta;&sigmaf; &epsilon;&pi;&iota;&chi;&epsilon;&#943;&rho;&eta;&sigma;&eta;&sigmaf;, &eta; &omicron;&pi;&omicron;&#943;&alpha; &tau;&alpha; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&alpha;  &chi;&rho;&#972;&nu;&iota;&alpha;, &#941;&chi;&epsilon;&iota; &sigma;&upsilon;&nu;&epsilon;&chi;&#974;&sigmaf; &alpha;&nu;&omicron;&delta;&iota;&kappa;&#942; &pi;&omicron;&rho;&epsilon;&#943;&alpha;.</strong></p>
+                  <p class="b"><strong>&Eta; &epsilon;&tau;&alpha;&iota;&rho;&#943;&alpha; &delta;&iota;&alpha;&theta;&#941;&tau;&epsilon;&iota;, &mu;&eta;&chi;&alpha;&nu;&#942;&mu;&alpha;&tau;&alpha; &tau;&epsilon;&lambda;&epsilon;&upsilon;&tau;&alpha;&#943;&alpha;&sigmaf; &tau;&epsilon;&chi;&nu;&omicron;&lambda;&omicron;&gamma;&#943;&alpha;&sigmaf;, &pi;&lambda;&#942;&rho;&omega;&sigmaf; &epsilon;&xi;&omicron;&pi;&lambda;&iota;&sigma;&mu;&#941;&nu;&omicron;  &sigma;&tau;&omicron;&#973;&nu;&tau;&iota;&omicron; &kappa;&alpha;&theta;&#974;&sigmaf; &kappa;&alpha;&iota; &sigma;&upsilon;&nu;&epsilon;&rho;&gamma;&alpha;&sigma;&#943;&alpha; &mu;&epsilon; &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&#943;&epsilon;&sigmaf; &omicron;&pi;&epsilon;&rho;&alpha;&tau;&#941;&rho;, &eta;&chi;&omicron;&lambda;&#942;&pi;&tau;&epsilon;&sigmaf; &kappa;&alpha;&iota; &lambda;&omicron;&iota;&pi;&omicron;&#973;&sigmaf;  &epsilon;&pi;&alpha;&gamma;&gamma;&epsilon;&lambda;&mu;&alpha;&tau;&#943;&epsilon;&sigmaf; &tau;&omicron;&upsilon; &chi;&#974;&rho;&omicron;&upsilon; &#940;&rho;&tau;&iota;&alpha; &kappa;&alpha;&tau;&alpha;&rho;&tau;&iota;&sigma;&mu;&#941;&nu;&omicron;&upsilon;&sigmaf; &sigma;&tau;&omicron; &alpha;&nu;&tau;&iota;&kappa;&epsilon;&#943;&mu;&epsilon;&nu;&omicron;.</strong></p>
+                  <p class="b"><strong>&Eta; &sigma;&omega;&sigma;&tau;&#942; &epsilon;&pi;&iota;&lambda;&omicron;&gamma;&#942; &tau;&eta;&sigmaf; &pi;&rho;&omicron;&beta;&omicron;&lambda;&#942;&sigmaf; &sigma;&epsilon; &sigma;&chi;&#941;&sigma;&eta; &mu;&epsilon; &tau;&omicron;&nu; &kappa;&alpha;&tau;&#940;&lambda;&lambda;&eta;&lambda;&omicron; &sigma;&chi;&epsilon;&delta;&iota;&alpha;&sigma;&mu;&#972; &tau;&eta;&sigmaf;  &delta;&iota;&alpha;&phi;&#942;&mu;&iota;&sigma;&eta;&sigmaf;, &epsilon;&#943;&nu;&alpha;&iota; &pi;&lambda;&epsilon;&omicron;&nu;&#941;&kappa;&tau;&eta;&mu;&alpha; &upsilon;&pi;&epsilon;&rho;&omicron;&chi;&#942;&sigmaf; &gamma;&iota;&alpha; &mu;&iota;&alpha; &sigma;&#973;&gamma;&chi;&rho;&omicron;&nu;&eta; &epsilon;&tau;&alpha;&iota;&rho;&iota;&kappa;&#942; &epsilon;&delta;&rho;&alpha;&#943;&omega;&sigma;&eta;.</strong></p>
+                  <p class="b"><strong>&Eta; &Epsilon;&Tau;&Alpha;&Iota;&Rho;&Iota;&Alpha; TV PRODUCTION &Epsilon;&Iota;&Delta;&Iota;&Kappa;&Epsilon;&Upsilon;&Epsilon;&Tau;&Epsilon; &Kappa;&Alpha;&Iota;  &Epsilon;&Chi;&Epsilon;&Iota; &Mu;&Epsilon;&Gamma;&Alpha;&Lambda;&Eta; &Epsilon;&Mu;&Pi;&Epsilon;&Iota;&Rho;&Iota;&Alpha; &Sigma;&Tau;&Iota;&Sigma; &Pi;&Alpha;&Rho;&Alpha;&Kappa;&Alpha;&Tau;&Omega; &Upsilon;&Pi;&Eta;&Rho;&Epsilon;&Sigma;&Iota;&Epsilon;&Sigma;</strong></p>
+                  <p class="b"><strong>1) &Delta;&Iota;&Alpha;&Phi;&Eta;&Mu;&Iota;&Sigma;&Tau;&Iota;&Kappa;&Alpha;  &Sigma;&Pi;&Omicron;&Tau;<br>
+  &Pi;&alpha;&rho;&alpha;&gamma;&omega;&gamma;&#942; &pi;&alpha;&nu;&tau;&#972;&sigmaf; &epsilon;&#943;&delta;&omicron;&upsilon;&sigmaf; &delta;&iota;&alpha;&phi;&eta;&mu;&iota;&sigma;&tau;&iota;&kappa;&#940; &sigma;&pi;&omicron;&tau;, &alpha;&pi;&#972; &mu;&epsilon;&rho;&iota;&kappa;&#940; &delta;&epsilon;&upsilon;&tau;&epsilon;&rho;&#972;&lambda;&epsilon;&pi;&tau;&alpha;, &mu;&#941;&chi;&rho;&iota;  &omega;&rho;&iota;&alpha;&#943;&alpha; (&pi;.&chi;.  telemarketing), Computer graphics, 3D &amp; 2D Animation, Post production.</strong></p>
+                  <p class="b"><strong>2) &Nu;&Tau;&Omicron;&Kappa;&Iota;&Mu;&Alpha;&Nu;&Tau;&Epsilon;&Rho;<br>
+  &Phi;&upsilon;&sigma;&iota;&omicron;&lambda;&alpha;&tau;&rho;&iota;&kappa;&#940;, &Beta;&iota;&omicron;&mu;&eta;&chi;&alpha;&nu;&iota;&kappa;&#940;, &Pi;&omicron;&lambda;&iota;&tau;&iota;&sigma;&tau;&iota;&kappa;&#940;, &Iota;&alpha;&tau;&rho;&iota;&kappa;&#940;, &Epsilon;&tau;&alpha;&iota;&rho;&iota;&kappa;&#940;, &Pi;&alpha;&rho;&omicron;&upsilon;&sigma;&iota;&#940;&sigma;&epsilon;&iota;&sigmaf;  &kappa;.&alpha;.</strong></p>
+                  <p class="b"><strong>3) VIDEO CLIP <br>
+                    (&Sigma;&kappa;&eta;&nu;&omicron;&theta;&epsilon;&sigma;&#943;&alpha;, 3d &amp; 2d Graphics, &Pi;&alpha;&rho;&alpha;&gamma;&omega;&gamma;&#942;, Color Correction, &#941;&omega;&sigmaf; &tau;&omicron; &tau;&epsilon;&lambda;&iota;&kappa;&#972; &mu;&omicron;&nu;&tau;&#940;&zeta;).</strong></p>
+                  <p class="b"><strong>4) &Kappa;&Alpha;&Lambda;&Upsilon;&Psi;&Epsilon;&Iota;&Sigma; &Epsilon;&Kappa;&Delta;&Eta;&Lambda;&Omega;&Sigma;&Epsilon;&Omega;&Nu;<br>
+  &Pi;&omicron;&lambda;&iota;&tau;&iota;&sigma;&tau;&iota;&kappa;&#941;&sigmaf; &epsilon;&kappa;&delta;&eta;&lambda;&#974;&sigma;&epsilon;&iota;&sigmaf;, &Pi;&omicron;&lambda;&iota;&tau;&iota;&kappa;&#941;&sigmaf; &omicron;&mu;&iota;&lambda;&#943;&epsilon;&sigmaf; - &Epsilon;&kappa;&delta;&eta;&lambda;&#974;&sigma;&epsilon;&iota;&sigmaf;, &Sigma;&upsilon;&nu;&#941;&delta;&rho;&iota;&alpha;,  &Sigma;&upsilon;&nu;&alpha;&upsilon;&lambda;&#943;&epsilon;&sigmaf;, &Epsilon;vents, Happenings &kappa;.&alpha;.</strong></p>
+                  <p class="b"><strong>5) &Sigma;&Chi;&Epsilon;&Delta;&Iota;&Alpha;&Sigma;&Mu;&Omicron;&Sigma; &Iota;&Sigma;&Tau;&Omicron;&Sigma;&Epsilon;&Lambda;&Iota;&Delta;&Omega;&Nu;<br>
+  &Sigma;&chi;&epsilon;&delta;&iota;&alpha;&sigma;&mu;&#972;&sigmaf; &kappa;&alpha;&iota; &kappa;&alpha;&tau;&alpha;&sigma;&kappa;&epsilon;&upsilon;&#942; &sigma;&tau;&alpha;&tau;&iota;&kappa;&#974;&nu; &kappa;&alpha;&iota; &delta;&upsilon;&nu;&alpha;&mu;&iota;&kappa;&#974;&nu; website &kappa;&alpha;&theta;&#974;&sigmaf; &kappa;&alpha;&iota;  &eta;&lambda;&epsilon;&kappa;&tau;&rho;&omicron;&nu;&iota;&kappa;&#974;&nu; &kappa;&alpha;&tau;&alpha;&sigma;&tau;&eta;&mu;&#940;&tau;&omega;&nu;.<br>
+  &Eta; &eta;&lambda;&epsilon;&kappa;&tau;&rho;&omicron;&nu;&iota;&kappa;&#942; &pi;&alpha;&rho;&omicron;&upsilon;&sigma;&#943;&alpha; &epsilon;&#943;&nu;&alpha;&iota; &pi;&lambda;&#941;&omicron;&nu; &alpha;&nu;&alpha;&gamma;&kappa;&alpha;&#943;&alpha; &gamma;&iota;&alpha; &kappa;&#940;&theta;&epsilon; &sigma;&#973;&gamma;&chi;&rho;&omicron;&nu;&eta; &epsilon;&tau;&alpha;&iota;&rho;&epsilon;&#943;&alpha;.<br>
+  &Omicron; &mu;&omicron;&nu;&tau;&#941;&rho;&nu;&omicron;&sigmaf; &sigma;&chi;&epsilon;&delta;&iota;&alpha;&sigma;&mu;&#972;&sigmaf; &mu;&epsilon; &tau;&eta; &mu;&epsilon;&lambda;&#941;&tau;&eta; &tau;&omega;&nu; &alpha;&nu;&alpha;&gamma;&kappa;&#974;&nu; &kappa;&alpha;&iota; &tau;&omega;&nu; &delta;&epsilon;&delta;&omicron;&mu;&#941;&nu;&omega;&nu; &sigma;&epsilon;  &sigma;&upsilon;&nu;&delta;&upsilon;&alpha;&sigma;&mu;&#972; &mu;&epsilon; &tau;&eta;&nu; &tau;&epsilon;&chi;&nu;&iota;&kappa;&#940; &#940;&rho;&tau;&iota;&alpha; &kappa;&alpha;&tau;&alpha;&sigma;&kappa;&epsilon;&upsilon;&#942; &#941;&chi;&omicron;&upsilon;&nu; &omega;&sigmaf; &alpha;&pi;&omicron;&tau;&#941;&lambda;&epsilon;&sigma;&mu;&alpha; &#941;&nu;&alpha; website &omicron;&upsilon;&sigma;&iota;&alpha;&sigma;&tau;&iota;&kappa;&#940;  &chi;&rho;&#942;&sigma;&iota;&mu;&omicron; &kappa;&alpha;&iota; &alpha;&pi;&omicron;&tau;&epsilon;&lambda;&epsilon;&sigma;&mu;&alpha;&tau;&iota;&kappa;&#972;.</strong></p>
+                  <p class="b"><strong>7) &Epsilon;&Nu;&Omicron;&Iota;&Kappa;&Iota;&Alpha;&Sigma;&Eta;,  &Tau;&Omicron;&Pi;&Omicron;&Theta;&Epsilon;&Tau;&Eta;&Sigma;&Eta;&nbsp; &Kappa;&Alpha;&Iota; &Pi;&Rho;&Omicron;&Beta;&Omicron;&Lambda;&Eta; &Sigma;&Epsilon; VIDEO WALL <br>
+  &Pi;&rho;&omicron;&beta;&omicron;&lambda;&#942; &delta;&iota;&alpha;&phi;&eta;&mu;&iota;&sigma;&tau;&iota;&kappa;&#974;&nu; &sigma;&pi;&omicron;&tau; &sigma;&epsilon; &epsilon;&kappa;&delta;&eta;&lambda;&#974;&sigma;&epsilon;&iota;&sigmaf;, &Sigma;&upsilon;&nu;&#941;&delta;&rho;&iota;&alpha;, &Sigma;&upsilon;&gamma;&kappa;&epsilon;&nu;&tau;&rho;&#974;&sigma;&epsilon;&iota;&sigmaf;, Happenings, &Epsilon;&omicron;&rho;&tau;&alpha;&sigma;&mu;&omicron;&#973;&sigmaf;  &kappa;.&alpha;<br>
+                    (&Eta; &pi;&alpha;&rho;&alpha;&gamma;&omega;&gamma;&#942; &tau;&omega;&nu; &theta;&epsilon;&mu;&#940;&tau;&omega;&nu; &pi;&rho;&omicron;&sigmaf; &pi;&rho;&omicron;&beta;&omicron;&lambda;&#942; &mu;&pi;&omicron;&rho;&epsilon;&#943; &nu;&alpha; &gamma;&#943;&nu;&epsilon;&iota; &alpha;&pi;&#972; &tau;&eta;&nu; TV PRODUCTION)</strong></p>
+                  <p class="b"><strong>8) &Pi;&Alpha;&Rho;&Alpha;&Gamma;&Omega;&Gamma;&Eta;  &Pi;&Omicron;&Lambda;&Lambda;&Alpha;&Pi;&Lambda;&Omega;&Nu; &Alpha;&Nu;&Tau;&Iota;&Gamma;&Rho;&Alpha;&Phi;&Omega;&Nu; CD - DVD&nbsp; VHS.</strong></p>
+                  <p class="b"><strong>9) &nbsp;DVD AUTHORING
+                    <!--msthemeseparator-->
+                  </strong></p>
+                  <table width="550" border="5" cellpadding="5" cellspacing="0">
+                    <tr valign="top">
+                      <td align="right"><p class="px5"><span style="color: #000000;; margin-top : 10px; padding-bottom : 5px; margin-bottom : 0px; margin-left : 20px; margin-right : 20px; font-family : Tahoma,Verdana,Arial; font-weight: bold;"> <img src="images/XARTHS_DHMOY.gif" alt="" width="172" height="150"></span>
+                        <p class="px5"><!-- Start of Globel Code -->
+<CENTER>
+<script language="JavaScript">
+var count = "tvproduction";          // Change Your Account?
+var type = "7segamberled";       // Change Your Counter Image?
+var digits = "8";          // Change The Amount of Digits on Your Counter?
+var prog = "hit";          // Change to Either hit/unique?
+var statslink = "no";    // provide statistical link in counter yes/no?
+var sitelink = "yes";     // provide link back to our site;~) yes/no?
+var cntvisible = "yes"; // do you want counter visible yes/no?
+</script>
+<!-- START DO NOT TAMPER WITH ANYTHING ELSE BELOW THIS LINE FOR YOUR WEBTV & UNIX VISITORS -->
+<script language="JavaScript" src="http://005.free-counters.co.uk/count-006.js">
+</script>
+<noscript>
+<a href="http://www.free-counters.co.uk" target="_blank">
+<img  src="http://005.free-counters.co.uk/count-006.pl?count=tvproduction&cntvisible=no&mode=noscript" alt="Free Counters" title="Free Counters" border="0">
+</a>The following text will not be seen after you upload your website,
+please keep it in order to retain your counter functionality 
+<br><a href="http://www.free-counters.co.uk/trackers/" target="_blank">Trackers</a><br> <a href="http://www.free-counters.co.uk/help/counter/" target="_blank">Counter Help</a><br>
+
+</noscript>
+<!-- END DO NOT TAMPER WITH ANYTHING ELSE ABOVE THIS LINE FOR YOUR WEBTV & UNIX VISITORS -->
+</CENTER>        
+<!-- End of Globel Code -->
+
+
+                        <p class="px5">                    
+                      <p class="px5"></td>
+                      <td bgcolor="#666666"><p class="left2" style="color: #000000;"><img src="images/dot_b.gif" width="5" height="5" alt="001" border="0" align="absmiddle">&nbsp;<span class="style51">&Sigma;&tau;&omicron;&iota;&chi;&epsilon;&#943;&alpha; &gamma;&iota;&alpha; &epsilon;&pi;&iota;&kappa;&omicron;&iota;&nu;&omega;&nu;&#943;&alpha;</span></p>
+                        <p class="b" style="color: #FFF;">&Tau;&eta;&lambda;Ý&phi;&omega;&nu;&omicron;: 23910-42.621</p>
+                        <p class="b" style="color: #FFF;">&Phi;&alpha;&chi;: 23910-42.621</p>
+                        <p class="b" style="color: #FFF;">&Kappa;&iota;&nu;: 6977-348.789 </p>
+                        <p class="b" style="color: #FFF;">e-mail: <a href="mailto:tvproduction@ath.forthnet.gr">tvproduction@ath.forthnet.gr</a></p>
+                        <p class="b" style="color: #FFF;">e-mail: <a href="mailto:pilak.tvproduction@gmail.com">pilak.tvproduction@gmail.com</a></p>
+                        <p class="b" style="color: #FFF;">blogspot: <a href="http:\\www.tvproduction59.blogspot.com">tvproduction59.blogspot.com</a></p>
+                        <p class="style11" style="color: #FF6600;"><span style="color:#c0c0c0;"></span><a href="http://www.youtube.com/user/tvproduction59?feature=creators_cornier-http%3A//s.ytimg.com/yt/img/creators_corner/Watch_me_on_YouTube/200x120_watchme_red.png"><img src="http://s.ytimg.com/yt/img/creators_corner/Watch_me_on_YouTube/200x120_watchme_red.png" alt="Subscribe to me on YouTube" width="136" height="68" /></a><img src="http://www.youtube-nocookie.com/gen_204?feature=creators_cornier-http%3A//s.ytimg.com/yt/img/creators_corner/Watch_me_on_YouTube/200x120_watchme_red.png" alt="" style="DISPLAY: none" /> &nbsp;</p>
+                        <p class="style11" style="color: #FF6600;">
+                          <iframe allowtransparency="allowtransparency" frameborder="0" scrolling="no" src="http://www.facebook.com/plugins/likebox.php?href=http%3A%2F%2Fwww.facebook.com%2F%23%21%2Fpages%2FTv-Production%2F180375225306251&amp;width=292&amp;colorscheme=light&amp;connections=10&amp;stream=true&amp;header=true&amp;height=587" style="border-bottom: medium none; border-left: medium none; border-right: medium none; border-top: medium none; height: 587px; overflow: hidden; width: 292px;"></iframe>
+                          &nbsp;</p></td>
+                    </tr>
+                  </table></td>
+              </tr>
+            </table>
+          <label></label></td>
+        </tr>
+    </table></td>
+  </tr>
+</table>
+<table border="5" cellpadding="0" cellspacing="0" width="759" align="center">
+  <tr>
+    <td colspan="2" align="right" background="images/fon_bot.gif" class="style3011"><table border="0" cellpadding="0" cellspacing="0" width="510" background="">
+      <tr>
+        <td><p class="style34"><a href="KENTRIKH.html????.html" class="style1911">Home</a></p></td>
+        <td><p class="style34"><a href="EREYNES.html" class="style1911">ufo x-files </a></p></td>
+        <td><p class="style18 style34"><a href="UFO PHOTOS.html" class="style1911">photo</a></p></td>
+        <td><p class="style34"><a href="KYKLOFORIES.html" class="style1911">&alpha;&gamma;&omicron;&rho;&#940;</a></p></td>
+        <td><p class="style34"><a href="CONTACT.html" class="style1911">Contacts</a></p></td>
+        <td><p class="style34">&nbsp;</p></td>
+        <td><p class="style34"><a href="index.html">FAQ</a></p></td>
+      </tr>
+    </table></td>
+  </tr>
+  <tr align="center">
+    <td width="270" class="style3011"><img src="images/tv production.jpg" width="238" height="71" alt="logo"></td>
+    <td width="490" class="style3011"><p align="center" style="color: #FFFFFF;">Copyright &copy;2005 www.tvproduction.gr </p></td>
+  </tr>
+</table>
+<span class="style30"></span>
+<script type="text/javascript">
+<!--
+var MenuBar1 = new Spry.Widget.MenuBar("MenuBar1", {imgRight:"SpryAssets/SpryMenuBarRightHover.gif"});
+//-->
+</script>
+</body>
+</html>
